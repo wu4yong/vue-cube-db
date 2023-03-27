@@ -18,6 +18,14 @@
             <el-menu-item index="1-2">数据管理</el-menu-item>
           </el-menu-item-group>
         </el-submenu>
+
+        <el-submenu index="3">
+          <template slot="title"><i class="el-icon-message"></i>会员管理</template>
+          <el-menu-item-group>
+            <el-menu-item index="1-1">会员人数</el-menu-item>
+            <el-menu-item index="1-2">收支明细</el-menu-item>
+          </el-menu-item-group>
+        </el-submenu>
       </el-menu>
     </el-aside>
   </el-aside>
