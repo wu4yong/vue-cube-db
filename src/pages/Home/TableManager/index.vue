@@ -149,6 +149,7 @@ export default {
   methods: {
     createTableData() {
       console.log(JSON.stringify(this.tableInfo));
+      alert(JSON.stringify(this.tableInfo))
     },
   },
 };
