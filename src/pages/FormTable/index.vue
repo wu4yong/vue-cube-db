@@ -2,7 +2,6 @@
 <template>
   <el-container>
     <el-main>
-
       <!-- 表单 -->
       <el-form :model="ruleForm" status-icon :rules="rules" ref="ruleForm" label-width="100px" class="demo-ruleForm">
         <el-form-item label="密码" prop="pass">
@@ -33,7 +32,6 @@
           <el-table-column prop="address" label="地址"> </el-table-column>
         </el-table>
       </el-footer>
-
     </el-main>
   </el-container>
 </template>
