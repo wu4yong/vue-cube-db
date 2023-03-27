@@ -1,0 +1,12 @@
+[
+  {
+    "clusterName": "集群001",
+    "namespace": "default",
+    "tableName": "person",
+    "columnFamilyName": "name",
+    "saveTime": "1679919181",
+    "businessDepart": "研发部",
+    "manager": "超级管理员",
+    "sampleData": "暂无数据"
+  }
+]
