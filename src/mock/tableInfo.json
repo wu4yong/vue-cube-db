@@ -1,12 +1,27 @@
 [
+  
   {
+
     "clusterName": "集群001",
     "namespace": "default",
     "tableName": "person",
-    "columnFamilyName": "name",
+    "columnFamilyName": "name1",
     "saveTime": "1679919181",
-    "businessDepart": "研发部",
+    "businessDepart": "研发部1",
     "manager": "超级管理员",
-    "sampleData": "暂无数据"
+    "sampleData": "暂无数据",
+    "createDate":"1679919181"
+  },
+  {
+
+    "clusterName": "集群002",
+    "namespace": "default",
+    "tableName": "people",
+    "columnFamilyName": "name2",
+    "saveTime": "1679919181",
+    "businessDepart": "研发部2",
+    "manager": "普通管理员",
+    "sampleData": "暂无数据",
+     "createDate":"1279919182"
   }
 ]

@@ -18,10 +18,15 @@ Vue.component(AsideMenu.name, AsideMenu);
 //引入路由相关文件
 import router from "@/router";
 //引入仓库进行注册
-// import store from "@/store";
+import store from "@/store";
 
 //引入MockServer.js----mock数据
 import "@/mock/mockServe";
+
+// 测试接口
+// import { reqTableInfoList } from "@/api";
+// let result = reqTableInfoList();
+// console.log(result);
 
 // 创建vue实例
 new Vue({
@@ -32,6 +37,6 @@ new Vue({
   //$router:进行编程式导航路由跳转push||replace
   router,
   //在入口文件这里注册store,在每一个组件的身上都拥有一个$store这个属性
-  // store,
+  store,
   NavBar,
 }).$mount("#app");

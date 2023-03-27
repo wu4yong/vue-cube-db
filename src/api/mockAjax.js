@@ -4,7 +4,6 @@ import nprogress from "nprogress";
 //如果出现进度条没有显示：一定是你忘记了引入样式了
 import "nprogress/nprogress.css";
 
-
 //底下的代码也是创建axios实例
 let requests = axios.create({
   //基础路径
@@ -30,7 +29,8 @@ requests.interceptors.response.use(
     return res.data;
   },
   (err) => {
-    alert("服务器响应数据失败");
+    // alert("服务器响应数据失败");
+    console.log(err);
   }
 );
 //最终需要对外暴露（不对外暴露外面模块没办法使用）
