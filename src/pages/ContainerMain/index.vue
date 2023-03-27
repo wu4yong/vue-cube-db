@@ -3,17 +3,19 @@
   <el-container>
     <!-- 左侧菜单 -->
     <Aside-Menu></Aside-Menu>
-    <Form-Table></Form-Table>
+    <!-- 路由组件出口的地方 -->
+    <router-view></router-view>
+
   </el-container>
 </template>
 
 <!-- 组件区域 -->
 <script>
-import FormTable from "@/pages/FormTable";
+// import FormTable from "@/pages/FormTable";
 
 export default {
   name: "ContainerMain",
-  components: { FormTable },
+  components: {},
 };
 </script>
 
