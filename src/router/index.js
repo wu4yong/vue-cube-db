@@ -7,11 +7,12 @@ import VueRouter from "vue-router";
 Vue.use(VueRouter);
 
 // 引入组件
+import Login from "@/pages/Login";
+import Register from "@/pages/Register";
 import Home from "@/pages/Home";
 // import Search from "@/pages/Search";
 import FormTable from "@/pages/FormTable";
-import Login from "@/pages/Login";
-import Register from "@/pages/Register";
+import TableManager from "@/pages/Home/TableManager";
 
 //需要重写VueRouter.prototype原型对象身上的push|replace方法
 //先把VueRouter.prototype身上的push|replace方法进行保存一份
@@ -55,27 +56,34 @@ VueRouter.prototype.replace = function (location, resolve, reject) {
 export default new VueRouter({
   routes: [
     {
+      path: "*",
+      redirect: "/tableManager",
+    },
+    // 登录组件
+    {
+      path: "/login",
+      component: Login,
+    },
+    // 注册主键
+    {
+      path: "/register",
+      component: Register,
+    },
+    // 主页
+    {
       path: "/home",
       component: Home,
       // 是否展示路由
       meta: { isShow: true },
     },
+    // 表格数据
     {
       path: "/formTable",
       component: FormTable,
     },
     {
-      path: "/login",
-      component: Login,
-    },
-    {
-      path: "/register",
-      component: Register,
-    },
-
-    {
-      path: "*",
-      redirect: "/formTable",
+      path: "/tableManager",
+      component: TableManager,
     },
   ],
 });
