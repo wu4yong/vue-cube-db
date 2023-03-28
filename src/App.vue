@@ -31,4 +31,8 @@ export default {
   padding: 0;
   height: 100%;
 }
+.el-container.is-vertical {
+  flex-direction: column;
+  height: 100%;
+}
 </style>
