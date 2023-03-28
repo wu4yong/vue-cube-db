@@ -10,9 +10,14 @@ Vue.use(VueRouter);
 import Login from "@/pages/Login";
 import Register from "@/pages/Register";
 import Home from "@/pages/Home";
-// import Search from "@/pages/Search";
-import FormTable from "@/pages/FormTable";
-import TableManager from "@/pages/Home/TableManager";
+import UserUpdate from "@/pages/Home/UserManager/Update";
+import UserList from "@/pages/Home/UserManager/List";
+import ManagerAdd from "@/pages/Home/ManagerData/Add";
+import ManagerList from "@/pages/Home/ManagerData/List";
+import MemberAdd from "@/pages/Home/Member/Add";
+import MemberList from "@/pages/Home/Member/List";
+
+// import TableManager from "@/pages/TableManager";
 
 //需要重写VueRouter.prototype原型对象身上的push|replace方法
 //先把VueRouter.prototype身上的push|replace方法进行保存一份
@@ -57,7 +62,7 @@ export default new VueRouter({
   routes: [
     {
       path: "*",
-      redirect: "/tableManager",
+      redirect: "/home",
     },
     // 登录组件
     {
@@ -76,14 +81,34 @@ export default new VueRouter({
       // 是否展示路由
       meta: { isShow: true },
     },
-    // 表格数据
+    // 用户管理组件
     {
-      path: "/formTable",
-      component: FormTable,
+      // 用户修改
+      path: "/user-update",
+      component: UserUpdate,
     },
     {
-      path: "/tableManager",
-      component: TableManager,
+      // 用户列表
+      path: "/user-list",
+      component: UserList,
+    },
+    // 数据管理组件
+    {
+      path: "/manager-add",
+      component: ManagerAdd,
+    },
+    {
+      path: "/manager-list",
+      component: ManagerList,
+    },
+    // 会员管理组件
+    {
+      path: "/member-add",
+      component: MemberAdd,
+    },
+    {
+      path: "/member-list",
+      component: MemberList,
     },
   ],
 });
