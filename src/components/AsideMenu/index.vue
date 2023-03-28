@@ -53,4 +53,8 @@ export default {
 </script>
 
 <!-- 样式区域 -->
-<style scoped></style>
+<style scoped>
+.el-aside {
+  float: left;
+}
+</style>
