@@ -17,4 +17,18 @@ export default {
 </script>
 
 <!-- 样式区域 -->
-<style scoped></style>
+<style scoped>
+.el-table {
+  width: 100%;
+}
+
+.el-table__header-wrapper table,
+.el-table__body-wrapper table {
+  width: 100% !important;
+}
+.el-table__body,
+.el-table__footer,
+.el-table__header {
+  table-layout: auto;
+}
+</style>
