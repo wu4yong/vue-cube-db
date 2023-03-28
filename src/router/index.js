@@ -1,9 +1,10 @@
-//引入Vue
+// 引入Vue
 import Vue from "vue";
 
+// 引入路由
 import VueRouter from "vue-router";
 
-//使用插件
+// 使用插件
 Vue.use(VueRouter);
 
 // 引入组件
@@ -19,8 +20,8 @@ import MemberList from "@/pages/Home/Member/List";
 
 // import TableManager from "@/pages/TableManager";
 
-//需要重写VueRouter.prototype原型对象身上的push|replace方法
-//先把VueRouter.prototype身上的push|replace方法进行保存一份
+// 需要重写VueRouter.prototype原型对象身上的push|replace方法
+// 先把VueRouter.prototype身上的push|replace方法进行保存一份
 let originPush = VueRouter.prototype.push;
 let originReplace = VueRouter.prototype.replace;
 
@@ -43,7 +44,7 @@ VueRouter.prototype.push = function (location, resolve, reject) {
   }
 };
 
-//重写VueRouter.prototype身上的replace方法了
+// 重写VueRouter.prototype身上的replace方法了
 VueRouter.prototype.replace = function (location, resolve, reject) {
   if (resolve && reject) {
     originReplace.call(this, location, resolve, reject);

@@ -5,14 +5,11 @@
     <Aside-Menu></Aside-Menu>
     <!-- 路由组件出口的地方 -->
     <router-view></router-view>
-
   </el-container>
 </template>
 
 <!-- 组件区域 -->
 <script>
-// import FormTable from "@/pages/FormTable";
-
 export default {
   name: "ContainerMain",
   components: {},
