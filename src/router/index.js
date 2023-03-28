@@ -7,9 +7,9 @@ import VueRouter from "vue-router";
 Vue.use(VueRouter);
 
 // 引入组件
+import Home from "@/pages/Home";
 import Login from "@/pages/Login";
 import Register from "@/pages/Register";
-import Home from "@/pages/Home";
 import UserUpdate from "@/pages/Home/UserManager/Update";
 import UserList from "@/pages/Home/UserManager/List";
 import ManagerAdd from "@/pages/Home/ManagerData/Add";
