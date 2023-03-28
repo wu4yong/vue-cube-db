@@ -2,7 +2,7 @@
 <template>
   <el-header>
     <span class="span">
-      <font size="3">欢迎 小花 登录系统</font>
+      <font size="3">欢迎 <font style="color:red">管理员</font> 登录系统</font>
       <el-button class="button" size="mini" type="primary">登录</el-button>
       <el-button class="button" size="mini" type="success">注册</el-button>
     </span>
