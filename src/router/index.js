@@ -60,19 +60,10 @@ VueRouter.prototype.replace = function (location, resolve, reject) {
 // 配置路由
 export default new VueRouter({
   routes: [
+    // 默认跳转
     {
       path: "*",
       redirect: "/home",
-    },
-    // 登录组件
-    {
-      path: "/login",
-      component: Login,
-    },
-    // 注册主键
-    {
-      path: "/register",
-      component: Register,
     },
     // 主页
     {
@@ -81,34 +72,50 @@ export default new VueRouter({
       // 是否展示路由
       meta: { isShow: true },
     },
+    // 登录组件
+    {
+      path: "/login",
+      component: Login,
+      meta: { isShow: true },
+    },
+    // 注册主键
+    {
+      path: "/register",
+      component: Register,
+      meta: { isShow: true },
+    },
     // 用户管理组件
     {
-      // 用户修改
       path: "/user-update",
       component: UserUpdate,
+      meta: { isShow: true },
     },
     {
-      // 用户列表
       path: "/user-list",
       component: UserList,
+      meta: { isShow: true },
     },
     // 数据管理组件
     {
       path: "/manager-add",
       component: ManagerAdd,
+      meta: { isShow: true },
     },
     {
       path: "/manager-list",
       component: ManagerList,
+      meta: { isShow: true },
     },
     // 会员管理组件
     {
       path: "/member-add",
       component: MemberAdd,
+      meta: { isShow: true },
     },
     {
       path: "/member-list",
       component: MemberList,
+      meta: { isShow: true },
     },
   ],
 });
