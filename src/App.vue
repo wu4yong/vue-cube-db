@@ -1,10 +1,11 @@
 <template>
   <div id="app">
-    <!-- 头部导航区域 -->
-    <Nav-Bar></Nav-Bar>
-    <!-- 主体区域 左侧菜单+右边内容 -->
-    <Container-Main></Container-Main>
-
+    <el-container class="container" direction="vertical">
+      <!-- 头部导航区域 -->
+      <Nav-Bar></Nav-Bar>
+      <!-- 主体区域 左侧菜单+右边内容 -->
+      <Container-Main></Container-Main>
+    </el-container>
   </div>
 </template>
 
@@ -26,10 +27,8 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #0b4278;
-  margin-top: 0%;
-  margin-left: 0%;
-  padding-top: 0%;
-  padding-left: 0%;
+  margin: 0;
+  padding: 0;
   height: 100%;
 }
 </style>

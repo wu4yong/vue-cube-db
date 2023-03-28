@@ -1,6 +1,6 @@
 <!-- 页面区域 -->
 <template>
-  <el-container>
+  <el-container class="container">
     <!-- 左侧菜单 -->
     <Aside-Menu></Aside-Menu>
     <!-- 路由组件出口的地方 -->

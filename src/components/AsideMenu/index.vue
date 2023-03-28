@@ -54,7 +54,4 @@ export default {
 
 <!-- 样式区域 -->
 <style scoped>
-.el-aside {
-  float: left;
-}
 </style>
